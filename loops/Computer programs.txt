@@ -1,0 +1,5042 @@
+﻿-->9th grade programs:
+Program #1 (SCC)
+
+
+import java.util.*;
+public class sum
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        int num;
+        System.out.print("\n Enter a number:");
+        num=sc.nextInt();
+        
+        System.out.print("\n The day is:");
+        switch(num)
+        
+        {
+             case 1:System.out.print("\n Monday");break;
+             case 2:System.out.print("\n Tuesday");break;
+             case 3:System.out.print("\n Wednesday");break;
+             case 4:System.out.print("\n Thursday");break;
+             case 5:System.out.print("\n Friday");break;
+             case 6:System.out.print("\n Saturday");break;
+             case 7:System.out.print("\n Sunday");break;
+             
+             default:System.out.print("\n Please enter another number again!");
+         }
+    }
+}
+
+
+
+
+Program #2
+import java.util.*;
+public class ConversionofFarenheitandCelsius
+{
+    public static void main(String arg[]) 
+    {
+     double fahrenheit,celsius;
+
+
+    Scanner sc=new Scanner(System.in);
+
+
+    System.out.println("Choose type of conversion \n 1.Fahrenheit to Celsius 2.Celsius to Fahrenheit");
+
+
+    int ch=sc.nextInt();
+    switch(ch)
+         {
+
+
+            case 1: System.out.println("Enter Fahrenheit temperature:");
+            fahrenheit =sc.nextDouble();
+            celsius =( fahrenheit -32)*5/9;
+
+
+            System.out.println("Celsius temperature is = "+ celsius);break;
+
+
+            case 2:System.out.println("Enter Celsius temperature");
+            celsius =sc.nextDouble();
+            farenheit =((9* celsius)/5)+32;
+
+
+            System.out.println("Fahrenheit temperature is = "+ farenheit);break;
+
+
+            default: System.out.println("please enter a valid choice");
+
+
+         } 
+    } 
+}
+
+
+---------------------------------------------------------------------------------------------------
+Program #3 (LOOPS)
+
+
+import java.util.*;
+public class Even
+{
+    public static void main(String [] args)
+    {
+         int i,evnum=2;
+         for (i=1; i<=10; i++)
+         {
+             System.out.println(evnum);
+             evnum=evnum+2;
+         }
+    }
+} 
+Program #4
+
+
+import java.util.*;
+public class sum
+{
+    public static void main(String[]args)
+    {
+        int i,sum=0;
+        
+       for(i=1;i<=100;i++)
+       {
+           sum=sum+i;
+       }
+        System.out.print("\n"+sum);
+      
+    }
+}
+
+
+
+
+Program #5
+import java.util.*;
+public class NaturalNumbers
+{
+    public static void main(String [] args)
+    {
+         int i;
+         for (i=1; i<=20; i++)
+         {
+             System.out.println(i);
+            
+         }
+    }
+} 
+Program #6
+import java.util.*;
+public class Factors
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i;
+        
+        System.out.print("\n Enter a number to find out its factors!");
+        num=sc.nextInt();
+        
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+} 
+Program #7
+
+
+import java.util.*;
+public class CountandFactors
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,count,sum;
+        
+        System.out.print("\n Enter a number to find out its factors!");
+        num=sc.nextInt();
+        count=0;
+        sum=0;
+        
+        System.out.println("\n The factors are :");
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                count=count+1;
+                sum=sum+i;
+                System.out.println(i);
+            }
+            
+        }
+         
+        System.out.println("\n The count is :"+count);
+        System.out.println("\n The sum of the factors are :"+sum);
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #8
+
+
+import java.util.*;
+public class CountandFactorsEven
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,count,sum;
+        
+        System.out.print("\n Enter a number to find out its factors!");
+        num=sc.nextInt();
+        count=0;
+        sum=0;
+        
+        System.out.println("\n The even factors are :");
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0 && i%2==0)
+            {
+                count=count+1;
+                sum=sum+i;
+                System.out.println(i);
+            }
+            
+        }
+         
+        System.out.println("\n The count of the even factors are :"+count);
+        System.out.println("\n The sum of the even factors are :"+sum);
+    }
+} 
+
+
+
+
+
+
+
+
+Program #9
+
+
+
+
+
+
+import java.util.Scanner;
+public class Perfect
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,sum;
+       
+       
+        System.out.print("Enter a number : ");
+        num = sc.nextInt();
+        sum=0;
+        
+        for(i = 1; i < num; i++)
+        {
+            if(num % i == 0)
+            {
+                sum = sum + i;
+            }
+        }
+        if(sum == num)
+        {
+            System.out.println("\n Given number is a Perfect number");
+        }
+        else
+        {
+            System.out.println("\n Given number is not a Perfect number");
+        }    
+    }
+}
+
+
+
+
+
+
+Program #10
+
+
+import java.util.*;
+public class PrimeNumber
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,count;
+        
+        System.out.print("\n Enter a number!");
+        num=sc.nextInt();
+        count=0;
+    
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                count=count+1;
+            }
+            
+        }
+         
+        if(count<=2)
+        {
+            System.out.print("\n The number is prime");
+        }
+        else
+        {
+            System.out.print("\n The number is not prime");
+        }
+    }
+} 
+
+
+
+
+
+
+Program #11
+
+
+import java.util.*;
+public class PrimeAndPerfect
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("\n Choose if you want a \n 1.Perfect number \n 2.Prime number");
+        int ch=sc.nextInt();
+        
+        System.out.print("Enter a number : ");
+        int num = sc.nextInt();
+        
+        switch(ch)
+        {
+            case 1:  int i,sum;
+       
+            sum=0;
+        
+            for(i = 1; i < num; i++)
+            {
+                if(num % i == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+             if(sum == num)
+            {
+                System.out.println("\n Given number is a Perfect number");
+            }
+              else
+            {
+            System.out.println("\n Given number is not a Perfect number");
+            };break;
+            
+            case 2: int count;
+        
+            count=0;
+    
+            for(i=1; i<=num; i++)
+             {
+                if(num%i==0)
+                {
+                     count=count+1;
+                }
+            
+             }
+         
+             if(count<=2)
+             {
+                System.out.print("\n The number is prime");
+             }
+                 else
+            {
+                System.out.print("\n The number is not prime");
+            };break;
+
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #12
+
+
+import java.util.*;
+public class PrimeXAndY
+{
+    public static void main(String[]args)
+    {
+          Scanner sc=new Scanner(System.in); 
+
+
+System.out.print("Enter 1st (STARTING) Number : ");
+ int num1 = sc.nextInt(); 
+
+
+System.out.print("Enter 2nd (ENDING) Number : "); 
+int num2 = sc.nextInt(); 
+
+
+System.out.println("Prime numbers between "+num1+" and "+num2+" are : "); 
+
+
+int count; 
+
+
+for(int i = num1 ; i <= num2 ; i++) 
+{ 
+count = 0; 
+for(int j = 1 ; j <= i ; j++)
+{
+ if(i % j == 0) 
+count = count+1; 
+} 
+if(count == 2) 
+System.out.println(i); 
+}
+      }
+}
+
+
+Program #13
+import java.util.*;
+public class PerfectXY
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int no1,no2,pno,sum,j;
+        
+        System.out.println("\n Enter 2 numbers :");
+        no1=sc.nextInt();
+        no2=sc.nextInt();
+        sum=0;
+        
+        for(pno=no1; pno<=no2; pno++ )//outer loop
+        {
+            if(pno%no1==0 && pno%no2==0)
+            {
+                sum=sum+pno;
+            }
+        }
+        for(j=1; j<=pno; j++ )//inner loop
+        {
+            if(sum==no1||sum==no2)
+            {
+              System.out.println("\n The perfect numbers between the numbers are :"+pno);
+            }
+             else
+             {
+                System.out.println("\n There are no perfect numbers between the numbers!");
+             }
+        }
+    }
+}
+
+
+
+
+Program #14
+
+
+import java.util.*;
+public class Prime20
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i=1,count,j=1,countprime=0;
+        
+        System.out.println("\n The first 20 prime numbers are:");
+        count=0;
+        
+        for(i=1;;i++)
+       
+        {
+            count=0;
+            for(j=1;j<=i;j++)
+            {
+              if(i%j==0)
+              {
+              count=count+1;
+              }
+            }
+            if(count<=2)
+            {
+                countprime++;
+                if(countprime==20)
+                {
+                    break;
+                }
+             System.out.println(i);
+            }
+        }
+    }
+}
+Program #15
+
+
+
+
+import java.util.*;
+public class studentMarks
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,sum=0,marks;
+        
+        System.out.println("\n Enter you marks");
+        
+        
+        for(i=1;i<=5;i++)
+        {
+            marks=sc.nextInt();
+            sum=sum+marks;
+            
+        }
+        System.out.println("\n The sum of your marks is\n"+sum);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #16
+import java.util.*;
+public class 5Marks20Std
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,marks,sum,j;
+        sum=0;
+        
+        System.out.println("\n Enter your marks :");
+        
+        for(i=1;i<=10;i++)
+        {
+            sum=0;
+            for(j=1;j<=5;j++)
+            {
+                marks=sc.nextInt();
+                sum=sum+marks;
+            }
+            System.out.println("\n The marks are \n "+sum);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #17
+
+
+import java.util.*;
+public class MaxMarks
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,m,max=0;
+        m=0;
+        
+        System.out.print("\n Enter your marks");
+        
+        for(i=1;i<=5;i++)
+        {
+            m=sc.nextInt();
+            if(m>max)
+            {
+                max=m;
+            }
+        }
+        System.out.println("\n Maximum marks is : "+max);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+Program #18
+
+
+
+
+import java.util.*;
+public class max_marks
+{
+   public static void main(String args[])
+   {
+       int i,marks,max,min,diff;
+       max=0;
+       min=100;
+       
+       
+       Scanner sc=new Scanner (System.in);
+       
+       System.out.print("\n Enter 5 marks of a student");
+       
+       for(i=1;i<=5;i++)
+       {
+           marks=sc.nextInt();
+           
+           if (marks>max)
+           {
+               max=marks;
+           }
+           
+           if (marks<min)
+           {
+               min=marks;
+           }
+                 }
+       System.out.print("\n The maximum of the 5 marks is: " +max);
+       System.out.print("\n The minimum of the 5 marks is: " +min);
+       
+       diff=max-min;
+       System.out.print("\n The difference between the max and min marks is: " +diff);    
+       
+   }
+}
+
+
+Progarm #19
+
+
+import java.util.*;
+public class Till0
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num;
+       
+        
+       
+        for(i=1;;i++)
+        {
+         System.out.print("\n Enter a number");
+            num=sc.nextInt();
+        if(num==0)
+        {
+         System.out.println(" No need to enter another number !");
+            break;
+        }
+             
+        if(num<=0)
+        {
+            System.out.print("\n The numbers are negative");
+        }
+        else if(num>0)
+        {
+            System.out.print("\n The numbers are positive");
+        }
+        }
+       
+    }
+}
+
+
+Program #20
+
+
+import java.util.*;
+public class Range
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,count=0;
+                
+        for(i=1;;i++)
+        {
+        System.out.println("\n Enter a number");
+            num=sc.nextInt();
+            count=count+1;
+            
+            //To find the count of the numbers....
+            if(count<=10)
+            {
+                System.out.println(" The range is from 1-10 !");
+            }
+            else if(count>10 && count<=100)
+            {
+                System.out.println(" The range is from 10-100 !");
+            }
+            else
+            {
+                System.out.println(" The range is greater than 100 !");
+            }
+            
+            if(num==0)
+            {
+                System.out.println(" No need to enter another number !");
+                break;
+            }
+          }
+    }
+}
+
+
+
+
+Progarm #21
+
+
+import java.util.*;
+public class NextPrimeNo
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num=0,count=0,nextprime=0,j;
+    
+         System.out.println("\n Enter a number :");
+         num=sc.nextInt();
+            
+        
+        for(nextprime=num+1;;nextprime++)
+        {
+            count=0;
+      
+               for(j=1;j<=nextprime;j++)
+               {
+                   if(nextprime%j==0)
+                   {
+                       count=count+1;
+                   }
+               }
+               if(count==2)
+               {
+                   System.out.println("\n The next prime number is "+nextprime);
+                   break;
+               }
+             
+        }
+    }
+}
+Progarm #22
+
+
+import java.util.*;
+public class MutliTable
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,power;
+        
+        System.out.println("\n Enter a number :");
+        num=sc.nextInt();
+        
+        System.out.println("\n The table of the number is :");
+
+
+        for(i=1;1<=10;i++)
+        {
+            power=i*num;
+            System.out.println("\n "+num+"^"+i+"="+power);
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #23
+import java.util.*;
+public class first3factors
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,count=0;
+        
+        System.out.println("\n Enter a number");
+        num=sc.nextInt();
+        
+        System.out.print("\n The first 3 factors are:");
+        
+        for(i=1;i<=num;i++)
+        {
+            if(num%i==0)
+            {
+                count=count+1;
+                System.out.print("\n"+i);
+            }    
+    
+         if(count==3)
+            {
+                   break;
+             
+            }
+        
+        }
+        
+    }
+}
+
+
+
+
+Progarm #24
+
+
+import java.util.*;
+public class FactBtwXY
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int no1,no2,i,fact=1,j=1;;
+        
+        System.out.println("\n Enter 2 numbers:");
+        no1=sc.nextInt();
+        no2=sc.nextInt();
+
+
+        for(i=no1;i<=no2;i++)
+        {
+            fact=1;
+            for(j=1;j<=i;j++)
+            {
+                fact=fact*j;                            
+            }
+            System.out.println("\n The factorials of "+j+" is : \n"+fact);
+        }              
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #25 
+
+
+
+
+import java.util.*;
+public class Smallest3_largest4_PrimeNo
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,count=0,k,l;
+        
+        for(i=100;i<=999;i++)
+        {
+            count=0;
+            for(j=1;j<=i;j++)//997
+            {
+                if(i%j==0)
+                {
+                    count=count+1;
+                }
+            }
+            if(count<=2)
+            {
+                System.out.println("\n The smallest 3 digit prime number is: \n"+j);
+                break;
+            }
+        }
+        
+         for(l=1000;l<=9999;l++)
+        {
+            count=0;
+            for(k=1;k<=l;k++)//9973
+            {
+                if(l%k==0)
+                {
+                    count=count+1;
+                }
+                if(count<=2)
+                {
+                    System.out.println("\n The largest 4 digit prime number is: \n"+k);
+                    break;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program#26 (Series)
+
+
+import java.util.*;
+public class Series //sum of=2+4+6+8....n terms
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number of terms ");
+        int n=sc.nextInt();
+        int s=0;
+        int t=2;
+        for(int i=1;i<=n;i++) //loop for n terms of the series!
+        {   
+            
+            s=s+t ; 
+             t=t+2;
+        }    
+            System.out.println(" The sum of the series is : "+s);  
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #27
+
+
+import java.util.*;
+public class series //S= 2/4 +4/6+6/8................. N terms
+
+
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double i,num=2,den=4,s=0,t;
+        
+        System.out.println("\n Enter a term: ");
+        t=sc.nextDouble();
+        
+        for(i=1;i<=t;i++)
+        {
+            s=s+num/den;
+            num=num+2;
+            den=den+2;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #28
+
+
+
+
+import java.util.*;
+public class series //S= 1 + 3+ 7+ 15+ 31............ N terms
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int terms,i,numb=1,s=0;
+        
+        System.out.println("\n Enter a term :");
+        terms=sc.nextInt();
+        
+        for(i=1;i<=terms;i++)
+        {
+            s=s+numb;
+            numb=(numb*2)+1;
+        }
+        System.out.println("\n The sum of series is :"+s);
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #29
+
+
+
+
+import java.util.*;
+public class series //S= 1*2 + 2*3 +3*4 ............ N terms
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,x=1,s=0,y=2;
+        
+        System.out.println("\n Enter a number :");
+        num=sc.nextInt();
+        
+        for(i=1;i<=num;i++)
+        {
+            s=s+(x*y);
+            x=x+1;
+            y=y+1;
+        }
+        
+        System.out.println("\n The sum of series is :" +s);
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #30
+
+
+
+
+
+
+import java.util.*;
+public class series //S= x+ x^2 + x^3 + x^4 ............ N terms 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double n,num,power=1,s=0,i;
+        
+        System.out.println("\n Enter a number :");
+        num=sc.nextDouble();
+        
+        System.out.println("\n Enter no. of terms :");
+        n=sc.nextDouble();
+        
+        for(i=1;i<=n;i++)
+        {
+            s=s+Math.pow(num,power);
+            power=power+1;
+            
+        }
+        
+        System.out.println("\n The sum of series is : "+s);
+        
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #31
+
+
+
+
+import java.util.*;
+public class series //S= 2! +4! +6! +8! ..... N terms
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,s=0,fact=1,x=2,j;
+        
+        System.out.println("\n Enter number of terms :");
+        num=sc.nextInt();
+        
+        for(i=1;i<=num;i++)
+        {
+             fact=1;            
+            for(j=1;j<=x;j++)
+            {
+               fact=fact*j;
+            }
+            s=s+fact;
+            x=x+2;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #32
+
+
+
+
+import java.util.*;
+public class series //S= 1/2! + 3/4! + 5/6! +7/8!... N terms 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double num=1,den=2,terms,s=0,i,j,fact=1;
+        
+        System.out.println("\n Enter a term :");
+        terms=sc.nextDouble();
+        
+        for(i=1;i<=terms;i++)
+        {
+            fact=1;
+            for(j=1;j<=den;j++)
+            {
+                fact=fact*j;
+            }
+            s=s+num/fact;
+            num=num+2;
+            den=den+2;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+Program #33
+
+
+
+
+import java.util.*;
+public class series //S= (10*1) /3 + (20*3)/5 + (30*5)/7............ N terms
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double x=10,y=1,den=3,s=0,i,terms;
+        
+        System.out.println("\n Enter number of terms :");
+        terms=sc.nextDouble();
+        
+        for(i=1;i<=terms;i++)
+        {
+            s=s+(x*y)/den;
+            x=x+10;
+            y=y+2;            
+            den=den+2;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #34
+
+
+
+
+import java.util.*;
+public class series //S= 1/1 + (1+2)/ (1*2) + (1+2+3)/ (1*2*3)... (1+2+3.....N)/(1*2*3..N) 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double s=0,j,sum=0,num=1,den=1,k,sum1=1,term,i;
+          
+        System.out.println("\n Enter no. of terms :");
+        term=sc.nextDouble();
+             
+        for(i=1;i<=term;i++)
+        {  
+            sum=0;
+            for(j=1;j<=num;j++)
+            {
+                sum=sum+j;
+            }
+                       
+          sum1=1;
+            for(k=1;k<=den;k++)
+            {
+                sum1=sum1*k;
+            }
+            
+            s=s+sum/sum1;
+          num=num+1;
+          den=den+1;
+       }
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+Program #35
+
+
+
+
+
+
+import java.util.*;
+public class series //S= x^2/2! + X^4/4! + X^6/6! ............... N terms
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double s=0,terms,i,j,fact=1,numb,den=2,power=2;
+        
+        System.out.println("\n Enter a number :");
+        numb=sc.nextDouble();
+        
+        System.out.println("\n Enter number of terms :");
+        terms=sc.nextDouble();
+        
+        for(i=1;i<=terms;i++)
+        {
+            fact=1;
+            for(j=i;j<=den;j++)
+            {
+                fact=fact*j;
+            }
+            
+            s=s+Math.pow(numb,power)/fact;
+            power=power+2;
+            den=den+2;
+        }
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+Progarm #36
+
+
+
+
+import java.util.*;
+public class series // S= 1/ (1*3) +1 / (1*3* 5) + 1/(1*3*5*7) + 1/(1*3*5*......N terms)
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double s=0,i,fact=1,j,den=3,num=1,terms;
+        
+        System.out.println("\n Enter number of terms :");
+        terms=sc.nextDouble();
+        
+        for(i=1;i<=terms;i++)
+        {
+            fact=1;
+            for(j=1;j<=den;j=j+2)
+            {
+                fact=fact*j;
+            }
+           
+            s=s+num/fact;
+            den=den+2;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #37
+
+
+
+
+import java.util.*;
+public class series // S= 1 + 12+ 123+ 1234+ ....... N terms 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double s=0,terms,num=0,y=1,i;
+        
+        System.out.println("\n Enter number of terms :");
+        terms=sc.nextDouble();
+        
+        for (i=1;i<=terms;i++)
+        {
+            s=s+(num*10+y);
+            
+            num=num*10+y;
+            y=y+1;
+            
+        }
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #38
+
+
+
+
+import java.util.*;
+public class series // S= 1 + 2+4+ 8+ 16..............1024
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,s=0;
+        
+        i=1;
+        while(i<=1024)
+        {
+            s=s+i;
+            i=i*2;
+        
+        }
+        System.out.println("\n "+s);
+        
+    }
+}
+
+
+OR
+
+
+import java.util.*;
+public class series // S= 1 + 2+4+ 8+ 16..............1024
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,numb=1,s=0;
+        
+        for(i=1;;i++)
+        {
+            if(numb<=1024)
+            {
+                
+            }
+            else
+            {
+                break;
+            }
+            
+            s=s+numb;
+            numb=numb*2;
+        }
+        System.out.println("\n "+s);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #39
+
+
+
+
+import java.util.*;
+public class Series // S= 1 + 4+ 9+16+25+36............225
+{
+   public static void main(String args[])
+   {              
+       double s=0,i,x=2;
+       
+       i=1;
+       while(i<=225)
+       {
+           s=s+i;
+           i=Math.pow(i,x);
+           i++;
+       }
+       System.out.print("\n The sum is: "+i);
+   }
+}
+
+
+OR
+
+
+import java.util.*;
+public class Series //alternate way
+{
+        public static void main(String[]args)
+        {
+                Scanner sc=new Scanner(System.in);
+                double s=0,numb=1,x=2,i;
+
+
+                for(i=1;;i++)
+                {
+                    if(numb<=225)
+                    {
+                        
+                    }
+                    else
+                    {
+                        break;
+                    }
+                    
+                    s=s+Math.pow(numb,x);
+                    numb=numb+1;
+                }
+                System.out.println(“\n The sum of series is :”+s);
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #40
+
+
+
+
+import java.util.*;
+public class Series // S= 1 + 3+ 7+13+21+31... N terms  
+//method=1+2=3,3+4=7,7+6=13,etc.
+{
+        public static void main(String[]args)
+        {
+                Scanner sc=new Scanner(System.in);
+                double s=0,numb=1,x=2,i,terms;
+                
+                System.out.println("\n Enter number of terms :");
+                terms=sc.nextDouble();
+
+
+                for(i=1;i<=terms;i++)
+                {
+                    s=s+numb;
+                    numb=numb+x;
+                    x=x+2;
+                }
+                System.out.println("\n The sum of series is :"+s);
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #41
+
+
+
+
+import java.util.*;
+public class Series //S= 2-4+6-8.......40
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int s=0,terms,numb=2,i,m=1;
+        
+        for(i=1;;i++)
+        {   
+            if(numb<=40)
+            {
+                
+            }
+            else
+            {
+                break;
+            }
+            
+             s=s+numb*m ; 
+             numb=numb+2;
+             m=m*-1;
+        }    
+            System.out.println(" The sum of the series is : "+s);  
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #42
+
+
+
+
+import java.util.*;
+public class series //S= 2! -4! +6! -8! ..... N terms
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,s=0,fact=1,x=2,j,m=1;
+        
+        System.out.println("\n Enter number of terms :");
+        num=sc.nextInt();
+        
+        for(i=1;i<=num;i++)
+        {
+             fact=1;            
+            for(j=1;j<=x;j++)
+            {
+               fact=fact*j;
+            }
+            s=s+fact*m;
+            x=x+2;
+            m=m*-1;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #43
+
+
+
+
+
+
+import java.util.*;
+public class series //S= 1+ 2+ 3+ 5+8+13+...........N terms //fibonacci series
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int s=0,numb=0,numb1=1,terms,i;
+        
+        System.out.println("\n Enter number of terms :");
+        terms=sc.nextInt();
+        
+        for(i=1;i<=terms;i++)
+        {
+            s=numb+numb1;
+            System.out.println(s);
+            numb=numb1;
+            numb1=s;
+        }
+        
+        System.out.println("\n The sum of series is :"+s);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #44 (Patterns)
+
+
+
+
+import java.util.*;
+public class pattern //1 //program #1
+                     //1 2 
+                     //1 2 3
+                     //1 2 3 4 
+                     //1 2 3 4 5  
+                     
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j;
+         
+         for(i=1;i<=5;i++)
+         {
+             for(j=1;j<=i;j++)
+             {
+                 System.out.print(j);
+             }
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #45
+
+
+
+
+import java.util.*;
+public class pattern //1 //program #2
+                     //22
+                     //333
+                     //4444 
+                     //55555  
+                     
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j;
+         
+         for(i=1;i<=5;i++)
+         {
+             for(j=1;j<=i;j++)
+             {
+                 System.out.print(i);
+             }
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #46
+
+
+
+
+
+
+import java.util.*;
+public class pattern //12345 //program #6
+                                         //1234
+                                 //123
+                                //12
+                                       //1
+                     
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j;
+         
+         for(i=5;i>=1;i--)
+         {
+             for(j=1;j<=i;j++)
+             {
+                 System.out.print(j);
+             }
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #47
+
+
+
+
+
+
+
+
+import java.util.*;
+public class pattern //5 5 4 5 4 3 5 4 3 2  5 4 3 2 1 //program #3
+                     
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j;
+         
+         for(i=5;i>=1;i--)
+         {
+             for(j=5;j>=i;j--)
+             {
+                 System.out.print(j);
+             }
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #48
+
+
+
+
+import java.util.*;
+public class pattern //11111 //program #4
+                                  //2222
+                                        //333
+                                      //44
+                                    //5 
+                     
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j;
+         
+         for(i=1;i<=5;i++)
+         {
+             for(j=5;j>=i;j--)
+             {
+                 System.out.print(i);
+             }
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #49
+
+
+
+
+import java.util.*;
+public class pattern //1  //program #5
+                     //2 3  
+                     //4 5 6 
+                     //7 8 9 10 
+                     //11 12 13 14 15  
+                     
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j,x=0;
+         
+         for(i=1;i<=5;i++)
+         {
+             for(j=1;j<=i;j++)
+             {
+                 x=x+1;
+                 System.out.print(x+" ");
+             }
+             
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #50
+
+
+
+
+import java.util.*;
+public class pattern //A //program #7
+                     //A B 
+                     //A B C 
+                     //A B C D  
+                     //A B C D E  
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i;
+         char j='A', x='A';
+         
+         for(i=1;i<=5;i++)
+         {
+             for(j='A';j<=x;j++)
+             {
+                 System.out.print(j+" ");
+             }
+             x++;
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #51
+
+
+
+
+import java.util.*;
+public class pattern //A //program #8
+                     //A B 
+                     //A B C 
+                     //A B C D  
+                     //A B C D E  
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i;
+         char j='A', x='E';
+         
+         for(i=5;i>=1;i--)
+         {
+             for(j='A';j<=x;j++)
+             {
+                 System.out.print(j+" ");
+             }
+             x--;
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #52
+
+
+
+
+import java.util.*;
+public class pattern //2 2 2 2 2 //program #9
+                     //4 4 4 4 
+                     //6 6 6 
+                     //8 8 
+                     //10 
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j,x=2;
+         
+         for(i=5;i>=1;i--)
+         {
+             for(j=1;j<=i;j++)
+             {
+                 
+                 System.out.print(x+" ");
+             }
+             x=x+2;
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #53
+
+
+
+
+
+
+import java.util.*;
+public class pattern //$ //program #10
+                     //$ $  
+                     //$ $ $  
+                     //$ $ $ $ 
+                     //$ $ $ $ $ 
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc=new Scanner(System.in);
+         int i,j;
+         
+         for(i=1;i<=5;i++)
+         {
+             for(j=1;j<=i;j++)
+             {
+                 
+                 System.out.print("$");
+             }
+             
+             System.out.println();
+             
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #54
+
+
+
+
+import java.util.*;
+public class patterns //A  //program #11
+                                        //A B A
+                                   //A B C B A
+                            //A B C D C B A
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,space=3,j;
+        char k,x='A';
+        
+        for(i=1;i<=4;i++)
+        {
+           for(j=1;j<=space;j++)
+           {
+               System.out.print(" ");
+           }
+           
+            for(k='A';k<=x;k++)
+            {
+                System.out.print(k);
+            }
+                x++;
+                space--;
+                System.out.println();
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+Program #55
+
+
+
+
+
+
+import java.util.*;
+public class patterns //program #12
+                      //$ $ $ $ $ $ $ 
+                        //$ $ $ $ $        
+                          //$ $ $          
+                            //$
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,space=0,j,k,x=7;
+        
+        for(i=4;i>=1;i--)
+        {
+           for(j=1;j<=space;j++)
+           {
+               System.out.print(" ");
+           }
+           
+           for(k=1;k<=x;k++)
+           {
+                System.out.print("$");
+           }
+           
+                x=x-2;
+                space++;
+                System.out.println();
+        }       
+            }
+}
+
+
+
+
+
+
+Program #56
+
+
+import java.util.*;
+public class pattern
+{
+   public static void main(String args[])
+   {
+       //program # 14
+       //1 2 3 4 5
+       //1 2 3 4
+       //1 2 3
+       //1 2
+       //1
+       //1
+       //1 2
+       //1 2 3
+       //1 2 3 4
+       //1 2 3 4 5     
+       int i=5,j=1,k=4;
+       
+       for(i=5;i>=1;i--)
+       {
+           for(j=1;j<=i;j++)
+           {
+               System.out.print(j);
+           }
+           System.out.println();
+       }
+       
+       for(i=1;i<=5;i++)
+       {
+           for(k=1;k<=i;k++)
+           {
+               System.out.print(k);
+           }
+           System.out.println();
+       }
+       
+       
+   }
+}
+Program #57
+
+
+import java.util.*;
+public class patterns
+{
+   public static void main(String args[])
+   {
+       //program #15
+       //1
+       //1 2
+       //1 2 3
+       //1 2 3 4
+       //1 2 3 4 5
+       //1 2 3 4
+       //1 2 3
+       //1 2
+       //1       
+       int i,j,k;
+       for(i=1;i<=5;i++)
+       {
+           for(j=1;j<=i;j++)
+           {
+               System.out.print(j);
+           }
+           System.out.println();
+       }       
+       for(i=4;i>=1;i--)
+       {
+           for(k=1;k<=i;k++)
+           {
+               System.out.print(k);
+           }
+           System.out.println();
+       }
+       
+   }
+}
+Program #58
+
+
+
+
+import java.util.*;
+public class patterns 
+                    //program #13
+                    //123454321
+                    //1234321
+                    //12321
+                    //121
+                    //1
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,k;
+        
+        for(i=5;i>=1;i--)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(j);
+            }
+            
+            for(k=j-2;k>=1;k--)
+            {
+                System.out.print(k);
+            }
+            
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+Program #59
+
+
+
+
+
+
+import java.util.*;
+public class paterns 
+                    //extra programs
+                    //123456789
+                    // 1234567
+                    //  12345
+                    //   123
+                    //    1
+{
+ public static void main(String args [])
+ {
+    Scanner sc=new Scanner(System.in);
+    int space=0,i,j,x=9,k;
+    
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=space;j++)
+        {
+            System.out.print(" ");
+        }
+        
+        for(k=1;k<=x;k++)
+        {
+            System.out.print(k);
+        }
+        
+        x=x-2;
+        space++;
+        System.out.println();
+    }
+  }
+ 
+}
+
+
+
+
+Program #60
+
+
+
+
+
+
+import java.util.*;
+public class paterns 
+                    //extra programs
+                    //11111
+                    // 2222
+                    //  333
+                    //   44
+                    //    5
+{
+ public static void main(String args [])
+ {
+    Scanner sc=new Scanner(System.in);
+    int i,j,space=0,k;
+         
+     for(i=1;i<=5;i++)
+     {
+        for(k=1;k<=space;k++) 
+        {
+            System.out.print(" ");
+        }
+        
+        for(j=5;j>=i;j--)
+            {
+            System.out.print(i);
+            }            
+    space++;
+    System.out.println();
+             
+    }
+  }
+}
+Program #61
+
+
+
+
+import java.util.*;
+public class patterns 
+                    //extra programs
+                    //1234554321
+                    // 12344321
+                    //  123321
+                    //   1221
+                    //    11
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,k,space=0,l;
+        
+        for(i=5;i>=1;i--)
+        {
+            for(l=1;l<=space;l++)
+            {
+            System.out.print(" ");
+            }
+            
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(j);
+            }            
+            for(k=j-1;k>=1;k--)
+            {
+                System.out.print(k);
+            }
+            space++;
+            System.out.println();
+        }
+    }
+}
+Program #62
+import java.util.*;
+public class pattern
+                //extra programa
+                //1 2 3 4 5
+                //  2 4 6 8
+                //    3 6 9
+                //      4 8
+                //        5
+{
+   public static void main(String args[])
+   {
+       int i,j,k,x=5,space=0;
+       
+       for(i=1;i<=5;i++)
+       {
+           for(j=1;j<=space;j++)
+           {
+               System.out.print(" ");
+           }
+           for(k=1;k<=x;k++)
+           {
+               System.out.print(k*i);
+           }
+           space++;
+           x=x-1;
+           System.out.println();
+       }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #63
+
+
+
+
+import java.util.*;
+public class patterns //extra programs
+                //    1
+                //   1 2
+                //  1 2 3 
+                // 1 2 3 4 
+                
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,space=3,j,k;
+        
+        for(i=1;i<=4;i++)
+        {
+            for(j=1;j<=space;j++)
+            {
+                System.out.print(" ");
+            }
+            
+            for(k=1;k<=i;k++)
+            {
+                System.out.print(k+" ");
+            }
+            
+            space--;
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+Program #64 (Extraction of  digits)
+
+
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #1
+        //Find Sum, average and count of digits of a number
+       
+        int num,sum=0,count=1,rem;
+        double avg=sum/count;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.println("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+           rem=num%10;
+           sum=sum+rem;
+           count++;
+           num=num/10;
+           avg=sum/count;
+        }
+           System.out.print("\n The sum is "+sum);
+           System.out.print("\n The count is "+count);
+           System.out.print("\n The average is "+avg);
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #65
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #2
+        //Find the sum of squares of each digit of a number
+       
+        int num,rem,sq1,sum=0;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.println("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+        rem=num%10;
+        System.out.print("\n The digit is: "+rem);
+       
+        num=num/10;
+       
+        sq1=rem*rem;
+        sum=sum+sq1;
+        }
+        System.out.print("\n The sum of the sq of each digit is: "+sum);
+       
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #66
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #3
+        //Find sum of first and last digit of a number
+       
+        int num,digits,rem,sum=0;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.print("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+            rem=num%10;
+            digits=rem;
+            num=num/10;
+            sum=sum+digits;
+        }
+        System.out.print("\n The sum of the first and the last digit of the number is "+sum);
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #67
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #4
+        //Display the count of no of digits in a number
+       
+        int count=0,num,i,rem;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.print("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num>0)
+        {
+             rem=num%10;
+             count++;
+             num=num/10;
+        }
+        System.out.print("\n The count of the digits is: "+count);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #68
+
+
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+      //program #5
+      //Display the count of even and odd digits in a number
+     
+        Scanner sc=new Scanner(System.in);
+        int num,rem,rem1,counteven,countodd,i;
+       
+        System.out.println("\n Enter a number ");
+        num=sc.nextInt();       
+        rem=num%10;
+        //System.out.print("\n "+rem);       
+        rem1=num/10;
+        //System.out.print("\n "+rem1);       
+        countodd=1;
+        counteven=1;
+        for(i=1;i<=num;i++)
+        {
+            if(num%i==0 && i%2==0)
+            {
+            counteven=counteven+1;
+            break;
+            }
+           
+            if(num%i==0 && (i%2)+1==0)
+            {
+                countodd=countodd+1;
+                break;
+            }
+        }
+        System.out.print("\n The count of even numbers are : "+counteven);
+        System.out.print("\n The count of odd numbers are : "+countodd);
+    }
+}
+Program #69
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #6
+        //Display the sum of even digits which are greater than 4 in a number
+       
+        int num,sum=0,even=0,even1=0,rem;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.print("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+            rem=num%10;
+            if(rem%2==0)
+            {
+                even=rem;
+            }
+            if(even<4)
+            {
+                even1=even;
+            }
+            sum=sum+even1;
+            num=num/10;
+        }
+        System.out.print("\n The sum of the even digits is: "+sum);
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #70
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #7
+        //Display the digits of a number which are divisible by 4 and 2      
+        int num,rem,i,digit;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.println("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+            rem=num%10;
+            if(rem%2==0)
+            {
+                System.out.print("\n The numbers divisible by 2 are: "+rem);
+            }
+            if(rem%4==0)
+            {
+                System.out.print("\n The numbers Divisible by 4 are: "+rem);
+            }
+            num=num/10;
+        }      
+    }
+}
+
+
+Program #71
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #8
+        //Display the count of prime digits in a number     
+        int num,rem,count=0,i,countprime=0;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.println("\n Enter a number :");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+            rem=num%10;
+            count=0;
+            for(i=1;i<=rem;i++)
+            {
+                if(rem%i==0)
+                {
+                count=count+1;
+                }
+            }
+            
+            num=num/10;
+            if(count==2)
+            {
+                countprime++;
+            }
+        } 
+        System.out.println("\n The count of prime digits in the number is : "+countprime);
+    }
+}
+ 
+
+
+ 
+
+
+
+
+Program #72
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String args[])
+    {
+        //program #10
+        //Display the maximum and minimum digit of a number     
+        int num,rem,count,sum,max=0,min=9;
+        Scanner sc=new Scanner(System.in);
+       
+        System.out.println("\n Enter a number");
+        num=sc.nextInt();
+       
+        while(num!=0)
+        {
+            rem=num%10;
+            if(max<rem)
+            {
+                max=rem;
+            }
+            
+            if(min>rem)
+            {
+                min=rem;
+            }
+            num=num/10;
+            
+        }  
+         System.out.println("\n The largest digit is : "+max);
+        System.out.println("\n The smallest digit is : "+min);
+    }
+}
+
+
+
+
+
+
+
+
+Program #73
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String[]args)
+    {
+      //program #11
+      //Check for Armstrong no (Sum of cubes of each digit is equal to the original number)
+        
+        Scanner sc=new Scanner(System.in);
+        int rem,sum=0,num,cube,num1=0;
+        
+        System.out.print("\n Enter a number :");
+        num=sc.nextInt();
+        
+        num1=num;
+        while(num!=0)
+        {
+        rem=num%10;
+        cube=rem*rem*rem;
+        sum=sum+cube;
+        num=num/10;
+        }
+        
+        if(sum==num1)
+        {
+            System.out.print("\n The number is Armstrong! ");
+        }
+        else
+        {
+            System.out.print("\n The number is not Armstrong! ");
+        }
+    }
+}
+Program #74
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String[]args)
+    {
+      //program #12
+      //Display all Armstrong number between x and y given by the user!
+        
+        Scanner sc=new Scanner(System.in);
+        int rem,sum=0,num,cube,num1,i,arm=0;
+        
+        System.out.print("\n Enter 1st number :");
+        num=sc.nextInt();
+        
+        System.out.print("\n Enter 2nd number :");
+        num1=sc.nextInt();
+       
+        while(num!=0 && num1!=0)
+        {
+            for(i=num;i<=num1;i++)
+            {
+                rem=i%10;
+                cube=rem*rem*rem;
+                sum=sum+cube;
+                num=num/10;
+                       
+            if(sum==i)
+            {
+                arm++;
+                System.out.print("\n The armstrong number is hehe :"+arm);
+            }            
+            }
+                System.out.print("\n The armstrong number is : "+i);
+            }
+    }
+}
+
+
+
+
+
+
+Program #75
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String[]args)
+    {
+        //program #13
+        // Check for Special number (Sum of factorials of each digit of a number is equal to the number itself) 
+        
+        Scanner sc=new Scanner(System.in);
+        int i,num,rem,sum=0,fact=0;
+        
+        System.out.println(" Enter a number : ");
+        num=sc.nextInt();
+        
+        while(num!=0)
+        {
+            rem=num%10;
+            fact=0;
+            for(i=1;i<=num;i++)
+            {
+                fact=fact*i;
+            }
+            sum=sum+fact;
+            num=num/10;
+            
+            if(num==sum)
+            {
+                System.out.print("\n The number is a special number!");
+            }
+            else
+            {
+                System.out.print("\n The number is not a special number!");
+            }
+        }
+    }
+}
+Program #76
+
+
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String[]args)
+    {
+        //program #14
+        // Check for Amicable number (Two numbers A and B are said to be amicable if the sum of factors of first number excluding the no itself is equal to the second number)  
+        
+        Scanner sc=new Scanner(System.in);
+        int i,num,rem,sum=0,fact=0,num1,count=0,rem1,sum1=0,j,count1=0;
+        
+        System.out.println(" Enter a number : ");
+        num=sc.nextInt();
+        
+        System.out.println("\n Enter a number : ");
+        num1=sc.nextInt();
+        
+        while(num!=0)
+        {
+            rem=num%10;
+            for(i=1;i<=rem;i++)
+            {
+                if(num%i==0)
+                {
+                    count++;
+                }
+            }
+            sum=sum+i-num;
+            num=num/10;
+        }
+        
+        while(num1!=0)
+        {
+            rem1=num%100;
+            for(j=1;j<=rem1;j++)
+            {
+                if(num1%j==0)
+                {
+                    count1++;
+                }
+            }
+            sum1=sum1+j;
+            num1=num1/10;
+        }
+        
+        if(sum==sum1)
+            {
+                System.out.print("\n The number is a amicable number!");
+            }
+            else
+            {
+                System.out.print("\n The number is not a amicable number!");
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #77
+
+
+import java.util.*;
+public class eod
+{
+   public static void main(String args[])
+   {
+       //program #15
+       //Automorphic no (Find the square of the number and if the number is present at the end of its square it is automorphic number)
+       
+       int num,sqr,num1,rem,count=0,y;
+       Scanner sc= new Scanner(System.in);
+       
+       System.out.print("\n Enter a number");
+       num=sc.nextInt();
+       
+       num1=num;
+       sqr=num1*num1;
+       while(num1!=0)
+       {
+          count++;
+          num1=num1/10;
+       }
+       y= (int) (sqr%(Math.pow(10,count)));
+       
+       if(y==num)
+       {
+           System.out.print("\n The number is automorphic");
+       }
+       else
+       {
+           System.out.print("\n The number is not automorphic");
+       }
+       
+   }
+}
+Program #78
+
+
+public class eod
+{
+    public static void main(String[]args)
+    {
+        //program #19
+        //display the numbers in words!
+        Scanner sc=new Scanner(System.in);
+        int res,num,rev=0,nnum;
+        System.out.println("Enter a 3 digit number!");
+        num=sc.nextInt();
+        nnum=num;
+        while(num!=0)
+        {
+            res=num%10;
+            rev=rev*10+res;
+            num=num/10;
+        }
+            nnum=rev;
+            System.out.print("\n The conversion from digit to number is :");
+            while(nnum!=0)
+            {
+                rev=nnum%10;
+                if(rev==1)
+                {
+                    System.out.print("\n One");
+                }
+                else if(rev==2)
+                {
+                    System.out.print("\n Two");
+                }
+                else if(rev==3)
+                {
+                    System.out.print("\n Three");
+                }
+                else if(rev==4)
+                {
+                    System.out.print("\n Four");
+                }
+                else if(rev==5)
+                {
+                    System.out.print("\n Five");
+                }
+                else if(rev==6)
+                {
+                    System.out.print("\n Six");
+                }
+                else if(rev==7)
+                {
+                    System.out.print("\n Seven");
+                }
+                else if(rev==8)
+                {
+                    System.out.print("\n Eight");
+                }
+                else if(rev==9)
+                {
+                    System.out.print("\n Nine");
+                }
+                else if(rev==0)
+                {
+                    System.out.print("\n Zero");
+                }
+            nnum=nnum/10;
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #79
+
+
+
+
+import java.util.*;
+public class eod
+{
+    public static void main(String[]args)
+    {
+        //program #16
+        //chk for BUZZ NUMBER (A number which either ends with 7 or is divisible by 7)
+        
+        Scanner sc=new Scanner(System.in);
+        int num;
+        
+        System.out.println("\n Enter a number : ");
+        num=sc.nextInt();
+        
+        System.out.println("\n The number you entered is :"+num);
+        
+        if(num%7==0 || num%10==7)
+        {
+            System.out.println("\n The number is a BUZZ number!");
+        }
+        else
+        {
+            System.out.println("\n The number is NOT A BUZZ number!");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--->10th grade programs:
+Program #1 (Arrays)
+
+
+
+
+import java.util.*;
+public class array  //program #1
+                    //Write a program to read and store 20 numbers in an array and find out the count of even no and odd numbers.
+{        
+    public static void main(String[]args)        
+    {            
+        Scanner sc=new Scanner(System.in);
+        int i;
+        int counte=0;
+        int counto=0;
+        
+        float x[]=new float[20];//array of size 10 
+        System.out.print("\n Enter 10 ELEMENTS: ");
+        for(i=0;i<=19;i++)
+        {     
+          x[i]=sc.nextInt();
+        }
+        
+        for(i=0;i<=19;i++)
+        { 
+            if(x[i]%2==0)
+             counte++;
+             else
+             counto++;
+            
+        }
+        System.out.print("\n The number of the even numbers : "+counte);
+        System.out.print("\n The number of the odd numbers :"+counto);
+        
+    }
+}
+
+
+
+
+
+
+Program #2
+
+
+
+
+import java.util.*;
+public class array  //program #2
+                    //Write a program to read and store 10 numbers in an array and display the array in reverse order 
+{        
+    public static void main(String[]args)        
+    {            
+        Scanner sc=new Scanner(System.in);
+        int i;
+        
+        int x[]=new int[10];//array of size 10 
+        
+        System.out.print("\n Enter 10 ELEMENTS: ");
+        
+        for(i=0;i<=9;i++)
+        {     
+          x[i]=sc.nextInt();
+        }
+        
+        for(i=9;i>=0;i--)
+        { 
+           System.out.print("\n The revere order for your input is :"+x[i]); 
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #3
+
+
+
+
+import java.util.*;
+public class array  //program #3
+                    //Write a program to display the first and last element of an array of size 10.  
+{        
+    public static void main(String[]args)        
+    {            
+        Scanner sc=new Scanner(System.in);
+        int i;
+        
+        int x[]=new int[10];//array of size 10 
+        
+        System.out.print("\n Enter 10 ELEMENTS: ");
+        
+        for(i=0;i<=9;i++)
+        {     
+          x[i]=sc.nextInt();
+        }
+        
+        System.out.print("\n The first number is :"+x[0]);
+        System.out.print("\n The last number is :"+x[9]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #4
+
+
+
+
+import java.util.*;
+public class array  //program #5
+                    //Write a program to read and store 10 numbers in an array and display the numbers which are even and multiples of 6 
+{        
+    public static void main(String[]args)        
+    {            
+        Scanner sc=new Scanner(System.in);
+        int i;
+        
+        int x[]=new int[10];//array of size 10 
+        
+        System.out.print("\n Enter 10 ELEMENTS: ");
+        
+        for(i=0;i<=9;i++)
+        {     
+          x[i]=sc.nextInt();
+          
+          if(x[i]%2==0 && x[i]%6==0)
+          {
+              System.out.print("\n The numbers which are divisible by 6 and are even are: "+x[i]);
+          }
+          else
+          {
+              break;
+          }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #5
+
+
+
+
+
+
+import java.util.*;
+public class array  //program #6
+                    //Write a program to read and store 10 numbers in an array and display the product of alternate elements of the array 
+{        
+    public static void main(String[]args)        
+    {            
+        Scanner sc=new Scanner(System.in);
+        int i;
+        
+        int x[]=new int[10];//array of size 10 
+        
+        System.out.print("\n Enter 10 ELEMENTS: ");
+        
+        for(i=0;i<=9;i++)
+        {     
+          x[i]=sc.nextInt();
+        }
+        
+        int p1=x[0]*x[9];
+        int p2=x[1]*x[8];
+        int p3=x[2]*x[7];
+        int p4=x[3]*x[6];
+        int p5=x[4]*x[5];
+        
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+        System.out.println(p4);
+        System.out.println(p5);
+
+
+    }
+}
+
+
+
+
+
+
+
+
+Program #6
+import java.util.*;
+public class array  //program #7
+                    //Write a program to read and store 10 numbers in an array and display the count of Armstrong numbers in the same
+
+
+{        
+    public static void main(String[]args)        
+    {            
+        Scanner sc=new Scanner(System.in);
+        int i,count=0,sum=0;
+        
+        int x[]=new int[10];//array of size 10 
+        
+        System.out.println("\n Enter 10 ELEMENTS: ");
+        
+        for(i=0;i<=9;i++)
+        {     
+          x[i]=sc.nextInt();
+          int y=x[i];
+          
+           while (x[i]!=0)
+           {
+             int rem=x[i]%10;
+             int cube=rem*rem*rem;
+             sum=sum+cube;
+             x[i]=x[i]/10;
+           }
+         
+          if(sum==y)
+          {
+             count++;
+         
+          }
+        }
+         System.out.println("\n The number of Armstrong numbers are: "+count);
+    }
+}
+
+
+Program #7
+
+
+import java.util.*;
+public class array//program #8
+                  //WAP to display maximum element in an array
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i;
+         
+        int x[]=new int[2];
+        
+        System.out.println("\n Enter 2 elements :");
+        
+        for(i=0;i<=1;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        
+        int max=Math.max(x[0],x[1]);
+        System.out.print("\n The max of the numbers is: "+max);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #8
+
+
+import java.util.*;
+public class array//program #9
+                  //Read the marks of a student in 6 subjects and display the sum of best five. 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i;
+         
+        int x[]=new int[6];
+        
+        System.out.println("\n Enter your marks (in 6 subjects) :");
+        
+        for(i=0;i<=5;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        
+        int mn1=Math.min(x[0],x[1]);
+        int mn2=Math.min(x[2],x[3]);
+        int mn3=Math.min(x[4],x[5]);
+        int mn4=Math.min(mn1,mn2);
+        int mn5=Math.min(mn3,mn4);
+        
+        int sum=0;
+        sum=x[0]+x[1]+x[2]+x[3]+x[4]+x[5]-mn5;
+       
+        System.out.println("The sum of the best five marks are: "+sum);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #9
+
+
+import java.util.*;
+public class array//program #11
+                  //Write a program to read and store 10 numbers in an array .Add 2 to all even numbers, add 3 to all odd numbers and display the new array.  
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i;
+         
+        int x[]=new int[10];
+        
+        System.out.println("\n Enter 10 elements :");
+        
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+        
+           if(x[i]%2==0)
+           {
+               int even=0;
+               even= x[i]+2;
+               System.out.println("\n Even:"+even);
+           }
+            else
+           {
+              int odd=0;
+              odd= x[i]+3;
+              System.out.println("\n Odd: "+odd);
+           }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #10
+
+
+
+
+
+
+import java.util.*;
+public class array//program #12
+                  //Write a program to read and store 10 numbers in an array and display the maximum and minimum element in the same 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,max=0,min=100;
+         
+        int x[]=new int[10];
+        
+        System.out.print("\n Enter 10 elements :");
+        
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+            if(x[i]>max)
+            {
+                max=x[i];
+            }
+            
+            if(x[i]<min)
+            {
+                min=x[i];
+            }
+        }
+            System.out.print("\n The max number is : "+max);
+            System.out.print("\n The min number is : "+min);
+
+
+    }
+}
+
+
+
+
+Program #11
+
+
+import java.util.*;
+public class array//program #10
+                  //Display the second largest element in an array without sorting the array 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,max=0,position=0,j,max2=0;
+         
+        int x[]=new int[10];
+        
+        System.out.println("\n Enter 10 elements :");
+        
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+            if(x[i]>max)
+            {
+                max=x[i];
+                position =i;
+            }
+        }
+            for(j=0;j<=9;j++)
+            {
+                if(j!=position)
+                {
+                   if(x[j]>max2)
+                   {
+                       max2=x[j];
+                   }
+                }
+            }
+            System.out.print("The 2nd largest number is :"+max2);
+    }
+}
+
+
+
+
+Program #12
+
+
+
+
+import java.util.*;
+public class arrays //program #13
+                    //Write a program to read and store 10 numbers in an array and display the maximum element after the location x specified by the user
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int pos,i,j,max=0;
+        
+        int x[]=new int[10];
+        
+        System.out.println("\n Enter 10 elements: ");
+        
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        
+         System.out.println("\n Enter a position: ");
+
+
+        pos=sc.nextInt();
+        
+        for(j=0;j<=9;j++)
+        {
+            if(j!=pos)
+            {
+                if(x[j]>max)
+                {
+                    max=x[j];
+                }
+            }
+        }
+
+
+        System.out.println("\n The maximum number after the position entered by you is: "+max);
+    }
+}
+Program #13
+
+
+
+
+
+
+
+
+import java.util.*;
+public class arrays //program #14
+                    // Write a program to store first 20 terms of a Fibonacci series in an array 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int pos,i,numb1=0,numb2=1,sum=0;
+        
+        int x[]=new int[20];
+
+
+        System.out.println("\n The first 20 numbers of Fibonacci series for is: ");
+
+
+        for(i=0;i<=19;i++)
+        {
+            sum=numb1+numb2;
+            numb1=numb2;
+            numb2=sum;
+            x[i]=sum;
+            System.out.print("\n"+x[i]);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #14
+
+
+import java.util.*;
+public class arrays // program # 16
+                    // Write a program to read and store 20 numbers in an array .Find the sum of first 10 and last 10 elements. Display which half has bigger sum.
+{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+       
+        int x[]= new int[20];
+        int i, sum1=0, sum2=0, j, k;
+        System.out.println("\n Enter 20 numbers");
+        for(i=0;i<=19;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        for(j=0;j<=9;j++)
+        {
+            sum1=sum1+x[j];
+        }
+        for(k=10;k<=19;k++)
+        {
+            sum2=sum2+x[k];
+        }
+        if(sum1>sum2)
+            {
+                System.out.print("\n The 1st half has the bigger sum \n The sum of the 1st half is : "+sum1+" \n The sum of the 2nd half is : "+sum2);
+            }
+        else if(sum1<sum2)
+            {
+                System.out.print("\n The 2nd half has the bigger sum \n The sum of the 1st half is : "+sum1+" \n The sum of the 2nd half is : "+sum2);
+            }
+        else
+        {
+            System.out.print("\n Both the halves have the same sum \n The 1st half's sum is : "+ sum1 + " \n The 2nd half's sum is : "+ sum2);
+        }
+    }
+}
+Program #15
+
+
+import java.util.*;
+public class arrays // program #17
+                    // Write a program to read and store 20 numbers in an array and find out the largest even no and smallest odd number
+{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+       
+        int x[]= new int[20];
+        int i, lrgevn=0 , smlodd=999;
+        System.out.println("\n Enter 20 numbers [2-3 digit number]");
+       
+        for(i=0;i<=19;i++)
+        {
+            x[i]=sc.nextInt();
+            if(x[i]%2==0 && x[i]>lrgevn)
+            {
+                lrgevn=x[i];
+            }
+            if(x[i]%2!=0 && x[i]<smlodd)
+            {
+                smlodd=x[i];
+            }
+        }
+        System.out.print("\n The largest even number is : "+lrgevn);
+        System.out.print("\n The smallest odd number is : "+smlodd);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #16
+
+
+import java.util.*;
+public class arrays //program #18
+                    //Write a program to read, store 10 numbers in an array A[]and put the first 5 in array B[] and next 5 in array C[]. Display the content of new arrays.
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,k,j,l;
+        int A[]=new int[10];
+        int B[]=new int[5];
+        int C[]=new int[5];
+        
+        System.out.println("\n Enter 10 elements: ");
+        for(i=0;i<=9;i++)
+        {
+            A[i]=sc.nextInt();
+        }
+        
+        
+        System.out.println("\n The first 5 numbers are: ");
+        for(j=0;j<=4;j++)
+        {
+           B[j]=A[j];
+           System.out.println(""+B[j]);
+        }
+        
+        
+        System.out.println("\n The last 5 numbers are: ");
+        for(k=5,l=0;l<=4;l++,k++)
+        {
+            C[l]=A[k];
+            System.out.println(""+C[l]);
+        }
+    }
+}
+
+
+
+
+Program #17
+
+
+import java.util.*;
+public class arrays //program #19
+                    //Write a program to read store 10 numbers in an array A[] and 5 numbers in array B[] Merge them into array C[] 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,k;
+        int A[]=new int[10];
+        int B[]=new int[5];
+        int C[]=new int[15];
+
+
+        System.out.println("\n Enter 10 elements : \n They are: ");
+        for(i=0;i<=9;i++)
+        {
+            A[i]=sc.nextInt();
+            System.out.println(" "+A[i]);
+        }
+        
+        System.out.println("\n Enter 5 more elements : \n They are: ");
+        for(j=0;j<=4;j++)
+        {
+            B[j]=sc.nextInt();
+            System.out.println(" "+B[j]);
+        }
+        
+        System.out.println("\n Altogether they are : ");
+        for(k=0;k<=9;k++)
+        {
+            C[k]=A[k];
+            System.out.println(" "+C[k]);
+        }
+        
+        for(k=10,j=0;j<=4;j++,k++)
+        {
+            C[k]=B[j];
+            System.out.println(" "+C[k]);
+        }
+    }
+}
+
+
+Program #18
+
+
+
+
+import java.util.*;
+public class arrays //program #20
+                    //Write a program to count the even numbers in odd locations of an array of size 10
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,count=0;
+        int x[]=new int[10];
+
+
+        System.out.println("\n Enter 10 elements : ");
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+            if(i%2!=0)
+            {
+                if(x[i]%2==0)
+                {
+                    count++;
+                }
+            }
+        }
+        System.out.println("\n The count of even numbers in odd locations are/is : "+count);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #19 (Given By Sir)
+
+
+import java.util.*;
+public class arrays //program-find the frequency of each digit in 10 elements inputted by the user
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int[] x = new int[10];
+        int[] freq = new int[10];
+        int i, j, count=0;
+    
+        System.out.println("\n Enter 10 elements in array: ");
+        for(i=0; i<=9; i++)
+        {
+          x[i] = sc.nextInt();
+          freq[i] = -1;
+         }
+        
+        for(i=0; i<=9; i++)
+       {
+            count = 1;
+            for(j=i+1; j<=9; j++)
+            {
+                if(x[i]==x[j])
+                {
+                    count++;
+                    freq[j] = 0;
+                }
+            }
+        
+            if(freq[i] != 0)
+            {
+                freq[i] = count;
+            }
+        }
+        System.out.println("\n Frequency of all elements of array : ")
+        for(i=0; i<=9; i++)
+        {
+            if(freq[i] != 0)
+            {
+                System.out.println(x[i] + " occurs " + freq[i] + " times ");
+            }
+        }
+    }
+}
+Program #20
+
+
+
+
+import java.util.*;
+public class arrays//program #21
+                    //Write a program to swap the first and last element of an array of size 10
+{
+   public static void main(String[]args)
+   {
+       Scanner sc= new Scanner(System.in);
+       int i,swap;
+       int x[]= new int [10];
+       
+       System.out.println("\n Enter 10 elements: ");
+       for (i=0;i<=9;i++)
+       {
+           x[i]=sc.nextInt();
+       }
+       
+       swap=x[0];
+       x[0]=x[9];
+       x[9]=swap;
+       
+       System.out.println("\n After swapping the 1st and last elements: \n The 1st element is: "+x[0]+"\n and the last element is: "+x[9]);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #21
+
+
+import java.util.*;
+public class arrays //program #23
+                    //Read a number and display the corresponding month name and no of days in it. For e.g. if the input is 5 output must be May has 31 days 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i;
+        
+        int x[]=new int[1];
+        
+        System.out.println("\n Enter a number which you want to be converted into the month with the number of days in that month (enter any number from 1-12) !");
+        
+        for(i=0;i<=0;i++)
+        {
+            x[i]=sc.nextInt();
+            switch(x[i])
+            {
+                case 1:System.out.print("\n January has 31 days");break;
+                case 2:System.out.print("\n Febuary has 28 days and once in four years 29 days");break;
+                case 3:System.out.print("\n March has 31 days");break;
+                case 4:System.out.print("\n April has 30 days");break;
+                case 5:System.out.print("\n May has 31 days");break;
+                case 6:System.out.print("\n June has 30 days");break;
+                case 7:System.out.print("\n July has 31 days");break;
+                case 8:System.out.print("\n August has 31 days");break;
+                case 9:System.out.print("\n September has 30 days");break;
+                case 10:System.out.print("\n October has 31 days");break;
+                case 11:System.out.print("\n November has 30 days");break;
+                case 12:System.out.print("\n December has 31 days");break;
+            default:System.out.print("\n Please enter a number from 1-12 !");
+            }
+        }
+    }
+}
+Program #22
+
+
+
+
+import java.util.*;
+public class arrays //program #24
+                    //Read a single digit and display the same in word. For e.g. input 1 output ->One 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i;
+        int x[]=new int[1];
+        
+        System.out.println("\n Enter a number from 1-10");
+        
+        for(i=0;i<=0;i++)
+        {
+            x[i]=sc.nextInt();
+            switch(x[i])
+            {
+                case 1:System.out.print("\n ONE");break;
+                case 2:System.out.print("\n TWO");break;
+                case 3:System.out.print("\n THREE");break;
+                case 4:System.out.print("\n FOUR");break;
+                case 5:System.out.print("\n FIVE");break;
+                case 6:System.out.print("\n SIX");break;
+                case 7:System.out.print("\n SEVEN");break;
+                case 8:System.out.print("\n EIGHT");break;
+                case 9:System.out.print("\n NINE");break;
+                case 10:System.out.print("\n TEN");break;
+                default:System.out.print("\n Please enter a number from 1-10 !");
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+Program #23(n.h.]
+
+
+import java.util.*;
+public class arrays //program #22
+                    //Write a program to count number of prime numbers in an array of size 10
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,count=0,j,y=0;
+        
+        int x[]=new int[10];
+        
+        System.out.println("\n Enter 10 elements : ");
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+            
+            for(j=1;j<=x[i];j++)
+            {
+                if(x[i]%j==0)
+                {
+                    count++;
+                }
+            }
+        }
+        System.out.println(" The numbers which are prime are : "+count);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #24 (Given By Sir)
+
+
+import java.util.*;
+public class arrays //GIVEN BY SIR
+                    //in a series contaning 9 elements, 8 of them are same...find the odd one out in arrays!
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,number=0,j,count=0;
+        int x[]=new int[9];
+        
+        System.out.println("\n Enter 4 pairs of same number and 1 different number!");
+        for(i=0;i<=8;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        
+        for(i=0;i<=8;i++)
+        {
+            for(j=0;j<=8;j++)
+            {
+                if(x[i]==x[j])
+                {
+                    count++;
+                }
+            }
+           if(count!=2)
+           {
+               number=x[i];
+           }
+           count=0;
+        }
+        System.out.print("\n The odd one out number is : "+number);
+    }
+}
+OR
+import java.util.*;
+public class arrays //GIVEN BY SIR
+                    //in a series containing 9 elements, 8 of them are the same...find the odd one out in arrays!
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,number=0,j=-1,count=0;
+        int x[]=new int[9];
+        
+        System.out.println("\n Enter 4 pairs of same number and 1 different number!");
+        for(i=0;i<=8;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        
+        for(i=0;i<=8;i=i+2)
+        {
+            j=j+2;
+            if(x[i]!=x[j])
+            {
+                number=x[i];
+                System.out.print("\n The odd one out number is : "+number);
+                break;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+Program #25
+
+
+import java.util.*;
+public class Ary
+{
+   public static void main(String args[])
+   {
+       // program #25
+       // Read date, month and year from user. Display the  new date adding 1 month to the input date
+       Scanner sc= new Scanner(System.in);
+       int date, month, year, ndate, nmonth, nyear;
+       System.out.print("\n Enter a date [FROM 1-31]");
+       date=sc.nextInt();
+       if(date>31 || date<1)
+       {
+           System.out.print("\n The number entered for Date is invalid");
+       }
+       System.out.print("\n Enter a month [FROM 1-12]");
+       month=sc.nextInt();
+       if (month>12 || month<1)
+       {
+           System.out.print("\n The number entered for Month is invalid");
+       }
+       System.out.print("\n Enter an year");
+       year=sc.nextInt();
+       
+       if (month==12)
+       {
+           ndate=date;
+           nmonth=1;
+           nyear=year+1;
+       }
+       else
+       {
+           ndate=date;
+           nmonth=month+1;
+           nyear=year;
+       }
+       System.out.print("\n The new date, new month and new year after adding 1 to the month is: "+ndate+" "+nmonth+" "+nyear);
+   }
+}
+
+
+
+
+Program #26
+
+
+import java.util.*;
+public class arrays//program #27
+                   // Write a program to store 10 numbers in an array and shift all even numbers to array E[] and all odd numbers to array O[] 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int x[]=new int[10];
+        int E[]=new int[10];
+        int O[]=new int[10];
+        int i;
+        
+        System.out.println("\n Enter 10 elements: ");
+        for(i=0;i<=9;i++)
+        {
+            x[i]=sc.nextInt();
+            if(x[i]%2==0)
+            {
+                E[i]=x[i];
+                System.out.println("\n The [even] numbers are : "+E[i]);
+            }
+            else
+            {
+                O[i]=x[i];
+                System.out.println("\n The [odd] numbers are : "+O[i]);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #27
+
+
+
+
+import java.util.*;
+public class arrays  // program #26
+                     //Read a number between 1 to 50 and display the Roman value for the same
+{
+   public static void main(String args[])
+   {
+       Scanner sc= new Scanner(System.in);
+       String x[]={"error","I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV","XXV","XXVI","XXVII","XXVIII","XXIX","XXX","XXXI","XXXII","XXXIII","XXXIV","XXXV","XXXVI","XXXVII","XXXVIII","XXXIX","XL","XLI","XLII","XLIII","XLIV","XLV","XLVI","XLVII","XLVIII","XLIX","L"};
+       System.out.print("\n Enter a number [FROM 1-50]");
+       int i=sc.nextInt();
+       System.out.print("\n "+x[i]+" is the roman numeral for "+i);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #28
+
+
+import java.util.*;
+public class arrays//program #28
+                   //Write a program to create 2 one dimensional arrays having 10 elements each. Merge both the array to array M[].Display the resultant array.
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int A[]=new int[10];
+        int B[]=new int[10];
+        int C[]=new int[20];
+        int i,j,k;
+        
+        System.out.println("\n Enter 10 elements : \n They are: ");
+        for(i=0;i<=9;i++)
+        {
+            A[i]=sc.nextInt();
+            System.out.println(" "+A[i]);
+        }
+        
+        System.out.println("\n Enter 10 more elements : \n They are: ");
+        for(j=0;j<=9;j++)
+        {
+            B[j]=sc.nextInt();
+            System.out.println(" "+B[j]);
+        }
+        
+        System.out.println("\n Altogether they are : ");
+        for(k=0;k<=9;k++)
+        {
+            C[k]=A[k];
+            System.out.println(" "+C[k]);
+        }
+        
+        for(k=10,j=0;j<=j;j++,k++)
+        {
+            C[k]=B[j];
+            System.out.println(" "+C[k]);
+        }
+
+
+    }
+}
+Program #29
