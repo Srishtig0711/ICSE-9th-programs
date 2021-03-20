@@ -1,4 +1,4 @@
-﻿Program #1
+// Program #1
 
 
 import java.util.*;
@@ -14,7 +14,8 @@ public class Even
          }
     }
 } 
-Program #2
+
+// Program #2
 
 
 import java.util.*;
@@ -33,10 +34,9 @@ public class sum
     }
 }
 
+// Program #3
 
 
-
-Program #3
 import java.util.*;
 public class NaturalNumbers
 {
@@ -50,7 +50,10 @@ public class NaturalNumbers
          }
     }
 } 
-Program #4
+
+// Program #4
+
+
 import java.util.*;
 public class Factors
 {
@@ -71,7 +74,8 @@ public class Factors
         }
     }
 } 
-Program #5
+
+//Program #5
 
 
 import java.util.*;
@@ -104,20 +108,7 @@ public class CountandFactors
     }
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Program #6
+// Program #6
 
 
 import java.util.*;
@@ -150,18 +141,7 @@ public class CountandFactorsEven
     }
 } 
 
-
-
-
-
-
-
-
-Program #7
-
-
-
-
+// Program #7
 
 
 import java.util.Scanner;
@@ -195,12 +175,7 @@ public class Perfect
     }
 }
 
-
-
-
-
-
-Program #8
+// Program #8
 
 
 import java.util.*;
@@ -235,12 +210,7 @@ public class PrimeNumber
     }
 } 
 
-
-
-
-
-
-Program #9
+// Program #9
 
 
 import java.util.*;
@@ -300,33 +270,11 @@ public class PrimeAndPerfect
                 System.out.print("\n The number is not prime");
             };break;
 
-
-
-
         }
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Program #10
+// Program #10
 
 
 import java.util.*;
@@ -335,40 +283,30 @@ public class PrimeXAndY
     public static void main(String[]args)
     {
           Scanner sc=new Scanner(System.in); 
+          
+        System.out.print("Enter 1st (STARTING) Number : ");
+         int num1 = sc.nextInt(); 
 
+        System.out.print("Enter 2nd (ENDING) Number : "); 
+        int num2 = sc.nextInt(); 
 
-System.out.print("Enter 1st (STARTING) Number : ");
- int num1 = sc.nextInt(); 
+        System.out.println("Prime numbers between "+num1+" and "+num2+" are : "); 
 
+        int count; 
 
-System.out.print("Enter 2nd (ENDING) Number : "); 
-int num2 = sc.nextInt(); 
-
-
-System.out.println("Prime numbers between "+num1+" and "+num2+" are : "); 
-
-
-int count; 
-
-
-for(int i = num1 ; i <= num2 ; i++) 
-{ 
-count = 0; 
-for(int j = 1 ; j <= i ; j++)
-{
- if(i % j == 0) 
-count = count+1; 
-} 
-if(count == 2) 
-System.out.println(i); 
+        for(int i = num1 ; i <= num2 ; i++) 
+        { 
+            count = 0; 
+            for(int j = 1 ; j <= i ; j++)
+            {
+             if(i % j == 0) 
+                count = count+1; 
+            } 
+       if(count == 2) 
+        System.out.println(i); 
+        }
+    }
 }
-      }
-}
-
-
-
-
-
 
 Program #11
 
@@ -407,9 +345,8 @@ public class Prime20
         }
     }
 }
+
 Program #12
-
-
 
 
 import java.util.*;
@@ -433,18 +370,9 @@ public class studentMarks
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 Program #13
+
+
 import java.util.*;
 public class 5Marks20Std
 {
@@ -468,17 +396,6 @@ public class 5Marks20Std
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 Program #14
 
@@ -506,18 +423,7 @@ public class MaxMarks
     }
 }
 
-
-
-
-
-
-
-
-
-
 Program #15
-
-
 
 
 import java.util.*;
@@ -557,7 +463,6 @@ public class max_marks
    }
 }
 
-
 Progarm #16
 
 
@@ -593,7 +498,6 @@ public class Till0
        
     }
 }
-
 
 Program #17
 
@@ -635,9 +539,6 @@ public class Range
     }
 }
 
-
-
-
 Progarm #18
 
 
@@ -673,6 +574,7 @@ public class NextPrimeNo
         }
     }
 }
+
 Program #19
 
 
@@ -699,8 +601,9 @@ public class MutliTable
     }
 }
 
-
 Progarm #20
+
+
 import java.util.*;
 public class first3factors
 {
@@ -733,9 +636,6 @@ public class first3factors
     }
 }
 
-
-
-
 Progarm #21
 
 
@@ -764,26 +664,7 @@ public class FactBtwXY
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Progarm #22
-
-
 
 
 import java.util.*;
