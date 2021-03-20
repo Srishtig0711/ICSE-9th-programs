@@ -1,0 +1,831 @@
+﻿Program #1
+
+
+import java.util.*;
+public class Even
+{
+    public static void main(String [] args)
+    {
+         int i,evnum=2;
+         for (i=1; i<=10; i++)
+         {
+             System.out.println(evnum);
+             evnum=evnum+2;
+         }
+    }
+} 
+Program #2
+
+
+import java.util.*;
+public class sum
+{
+    public static void main(String[]args)
+    {
+        int i,sum=0;
+        
+       for(i=1;i<=100;i++)
+       {
+           sum=sum+i;
+       }
+        System.out.print("\n"+sum);
+      
+    }
+}
+
+
+
+
+Program #3
+import java.util.*;
+public class NaturalNumbers
+{
+    public static void main(String [] args)
+    {
+         int i;
+         for (i=1; i<=20; i++)
+         {
+             System.out.println(i);
+            
+         }
+    }
+} 
+Program #4
+import java.util.*;
+public class Factors
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i;
+        
+        System.out.print("\n Enter a number to find out its factors!");
+        num=sc.nextInt();
+        
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+} 
+Program #5
+
+
+import java.util.*;
+public class CountandFactors
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,count,sum;
+        
+        System.out.print("\n Enter a number to find out its factors!");
+        num=sc.nextInt();
+        count=0;
+        sum=0;
+        
+        System.out.println("\n The factors are :");
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                count=count+1;
+                sum=sum+i;
+                System.out.println(i);
+            }
+            
+        }
+         
+        System.out.println("\n The count is :"+count);
+        System.out.println("\n The sum of the factors are :"+sum);
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #6
+
+
+import java.util.*;
+public class CountandFactorsEven
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,count,sum;
+        
+        System.out.print("\n Enter a number to find out its factors!");
+        num=sc.nextInt();
+        count=0;
+        sum=0;
+        
+        System.out.println("\n The even factors are :");
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0 && i%2==0)
+            {
+                count=count+1;
+                sum=sum+i;
+                System.out.println(i);
+            }
+            
+        }
+         
+        System.out.println("\n The count of the even factors are :"+count);
+        System.out.println("\n The sum of the even factors are :"+sum);
+    }
+} 
+
+
+
+
+
+
+
+
+Program #7
+
+
+
+
+
+
+import java.util.Scanner;
+public class Perfect
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,sum;
+       
+       
+        System.out.print("Enter a number : ");
+        num = sc.nextInt();
+        sum=0;
+        
+        for(i = 1; i < num; i++)
+        {
+            if(num % i == 0)
+            {
+                sum = sum + i;
+            }
+        }
+        if(sum == num)
+        {
+            System.out.println("\n Given number is a Perfect number");
+        }
+        else
+        {
+            System.out.println("\n Given number is not a Perfect number");
+        }    
+    }
+}
+
+
+
+
+
+
+Program #8
+
+
+import java.util.*;
+public class PrimeNumber
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num,i,count;
+        
+        System.out.print("\n Enter a number!");
+        num=sc.nextInt();
+        count=0;
+    
+        for(i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                count=count+1;
+            }
+            
+        }
+         
+        if(count<=2)
+        {
+            System.out.print("\n The number is prime");
+        }
+        else
+        {
+            System.out.print("\n The number is not prime");
+        }
+    }
+} 
+
+
+
+
+
+
+Program #9
+
+
+import java.util.*;
+public class PrimeAndPerfect
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("\n Choose if you want a \n 1.Perfect number \n 2.Prime number");
+        int ch=sc.nextInt();
+        
+        System.out.print("Enter a number : ");
+        int num = sc.nextInt();
+        
+        switch(ch)
+        {
+            case 1:  int i,sum;
+       
+            sum=0;
+        
+            for(i = 1; i < num; i++)
+            {
+                if(num % i == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+             if(sum == num)
+            {
+                System.out.println("\n Given number is a Perfect number");
+            }
+              else
+            {
+            System.out.println("\n Given number is not a Perfect number");
+            };break;
+            
+            case 2: int count;
+        
+            count=0;
+    
+            for(i=1; i<=num; i++)
+             {
+                if(num%i==0)
+                {
+                     count=count+1;
+                }
+            
+             }
+         
+             if(count<=2)
+             {
+                System.out.print("\n The number is prime");
+             }
+                 else
+            {
+                System.out.print("\n The number is not prime");
+            };break;
+
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program #10
+
+
+import java.util.*;
+public class PrimeXAndY
+{
+    public static void main(String[]args)
+    {
+          Scanner sc=new Scanner(System.in); 
+
+
+System.out.print("Enter 1st (STARTING) Number : ");
+ int num1 = sc.nextInt(); 
+
+
+System.out.print("Enter 2nd (ENDING) Number : "); 
+int num2 = sc.nextInt(); 
+
+
+System.out.println("Prime numbers between "+num1+" and "+num2+" are : "); 
+
+
+int count; 
+
+
+for(int i = num1 ; i <= num2 ; i++) 
+{ 
+count = 0; 
+for(int j = 1 ; j <= i ; j++)
+{
+ if(i % j == 0) 
+count = count+1; 
+} 
+if(count == 2) 
+System.out.println(i); 
+}
+      }
+}
+
+
+
+
+
+
+Program #11
+
+
+import java.util.*;
+public class Prime20
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i=1,count,j=1,countprime=0;
+        
+        System.out.println("\n The first 20 prime numbers are:");
+        count=0;
+        
+        for(i=1;;i++)
+       
+        {
+            count=0;
+            for(j=1;j<=i;j++)
+            {
+              if(i%j==0)
+              {
+              count=count+1;
+              }
+            }
+            if(count<=2)
+            {
+                countprime++;
+                if(countprime==20)
+                {
+                    break;
+                }
+             System.out.println(i);
+            }
+        }
+    }
+}
+Program #12
+
+
+
+
+import java.util.*;
+public class studentMarks
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,sum=0,marks;
+        
+        System.out.println("\n Enter you marks");
+        
+        
+        for(i=1;i<=5;i++)
+        {
+            marks=sc.nextInt();
+            sum=sum+marks;
+            
+        }
+        System.out.println("\n The sum of your marks is\n"+sum);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #13
+import java.util.*;
+public class 5Marks20Std
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,marks,sum,j;
+        sum=0;
+        
+        System.out.println("\n Enter your marks :");
+        
+        for(i=1;i<=10;i++)
+        {
+            sum=0;
+            for(j=1;j<=5;j++)
+            {
+                marks=sc.nextInt();
+                sum=sum+marks;
+            }
+            System.out.println("\n The marks are \n "+sum);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Program #14
+
+
+import java.util.*;
+public class MaxMarks
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,m,max=0;
+        m=0;
+        
+        System.out.print("\n Enter your marks");
+        
+        for(i=1;i<=5;i++)
+        {
+            m=sc.nextInt();
+            if(m>max)
+            {
+                max=m;
+            }
+        }
+        System.out.println("\n Maximum marks is : "+max);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+Program #15
+
+
+
+
+import java.util.*;
+public class max_marks
+{
+   public static void main(String args[])
+   {
+       int i,marks,max,min,diff;
+       max=0;
+       min=100;
+       
+       
+       Scanner sc=new Scanner (System.in);
+       
+       System.out.print("\n Enter 5 marks of a student");
+       
+       for(i=1;i<=5;i++)
+       {
+           marks=sc.nextInt();
+           
+           if (marks>max)
+           {
+               max=marks;
+           }
+           
+           if (marks<min)
+           {
+               min=marks;
+           }
+                 }
+       System.out.print("\n The maximum of the 5 marks is: " +max);
+       System.out.print("\n The minimum of the 5 marks is: " +min);
+       
+       diff=max-min;
+       System.out.print("\n The difference between the max and min marks is: " +diff);    
+       
+   }
+}
+
+
+Progarm #16
+
+
+import java.util.*;
+public class Till0
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num;
+       
+        
+       
+        for(i=1;;i++)
+        {
+         System.out.print("\n Enter a number");
+            num=sc.nextInt();
+        if(num==0)
+        {
+         System.out.println(" No need to enter another number !");
+            break;
+        }
+             
+        if(num<=0)
+        {
+            System.out.print("\n The numbers are negative");
+        }
+        else if(num>0)
+        {
+            System.out.print("\n The numbers are positive");
+        }
+        }
+       
+    }
+}
+
+
+Program #17
+
+
+import java.util.*;
+public class Range
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,count=0;
+                
+        for(i=1;;i++)
+        {
+        System.out.println("\n Enter a number");
+            num=sc.nextInt();
+            count=count+1;
+            
+            //To find the count of the numbers....
+            if(count<=10)
+            {
+                System.out.println(" The range is from 1-10 !");
+            }
+            else if(count>10 && count<=100)
+            {
+                System.out.println(" The range is from 10-100 !");
+            }
+            else
+            {
+                System.out.println(" The range is greater than 100 !");
+            }
+            
+            if(num==0)
+            {
+                System.out.println(" No need to enter another number !");
+                break;
+            }
+          }
+    }
+}
+
+
+
+
+Progarm #18
+
+
+import java.util.*;
+public class NextPrimeNo
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num=0,count=0,nextprime=0,j;
+    
+         System.out.println("\n Enter a number :");
+         num=sc.nextInt();
+            
+        
+        for(nextprime=num+1;;nextprime++)
+        {
+            count=0;
+      
+               for(j=1;j<=nextprime;j++)
+               {
+                   if(nextprime%j==0)
+                   {
+                       count=count+1;
+                   }
+               }
+               if(count==2)
+               {
+                   System.out.println("\n The next prime number is "+nextprime);
+                   break;
+               }
+             
+        }
+    }
+}
+Program #19
+
+
+import java.util.*;
+public class MutliTable
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,power;
+        
+        System.out.println("\n Enter a number :");
+        num=sc.nextInt();
+        
+        System.out.println("\n The table of the number is :");
+
+
+        for(i=1;1<=10;i++)
+        {
+            power=i*num;
+            System.out.println("\n "+num+"^"+i+"="+power);
+        }
+        
+    }
+}
+
+
+Progarm #20
+import java.util.*;
+public class first3factors
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,num,count=0;
+        
+        System.out.println("\n Enter a number");
+        num=sc.nextInt();
+        
+        System.out.print("\n The first 3 factors are:");
+        
+        for(i=1;i<=num;i++)
+        {
+            if(num%i==0)
+            {
+                count=count+1;
+                System.out.print("\n"+i);
+            }    
+    
+         if(count==3)
+            {
+                   break;
+             
+            }
+        
+        }
+        
+    }
+}
+
+
+
+
+Progarm #21
+
+
+import java.util.*;
+public class FactBtwXY
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int no1,no2,i,fact=1,j=1;;
+        
+        System.out.println("\n Enter 2 numbers:");
+        no1=sc.nextInt();
+        no2=sc.nextInt();
+
+
+        for(i=no1;i<=no2;i++)
+        {
+            fact=1;
+            for(j=1;j<=i;j++)
+            {
+                fact=fact*j;                            
+            }
+            System.out.println("\n The factorials of "+j+" is : \n"+fact);
+        }              
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progarm #22
+
+
+
+
+import java.util.*;
+public class Smallest3_largest4_PrimeNo
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,count=0,k,l;
+        
+        for(i=100;i<=999;i++)
+        {
+            count=0;
+            for(j=1;j<=i;j++)//997
+            {
+                if(i%j==0)
+                {
+                    count=count+1;
+                }
+            }
+            if(count<=2)
+            {
+                System.out.println("\n The smallest 3 digit prime number is: \n"+j);
+                break;
+            }
+        }
+        
+         for(l=1000;l<=9999;l++)
+        {
+            count=0;
+            for(k=1;k<=l;k++)//9973
+            {
+                if(l%k==0)
+                {
+                    count=count+1;
+                }
+                if(count<=2)
+                {
+                    System.out.println("\n The largest 4 digit prime number is: \n"+k);
+                    break;
+                }
+            }
+        }
+    }
+}
